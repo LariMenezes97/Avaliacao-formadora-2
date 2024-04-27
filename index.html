@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário UNISUAM</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <img src="logo.png" alt="logo unisuam"> <br>
+    <form id="unisuam-form">
+        <h1>Cadastro</h1>
+        
+        <!-- Seção de informações pessoais -->
+        <section>
+            <h2>Informações Pessoais</h2>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="password" id="senha" name="senha" placeholder="Senha">
+            <input type="password" id="confirmacao-senha" name="confirmacao-senha" placeholder="Confirmação de Senha">
+        </section>
+        
+        <!-- Seção de contato -->
+        <section>
+            <h2>Contato</h2>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+            <input type="text" id="cep" name="cep" placeholder="CEP">
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+            <input type="text" id="num" name="num" placeholder="Número">
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+            <input type="text" id="estado" name="estado" placeholder="Estado">
+        </section>
+        
+        <!-- Seção de interesses acadêmicos -->
+
+        <section>
+            <h2>Interesses Acadêmicos</h2>
+
+            <div id="idintacad">
+                <input type="radio" name="adm" id="idadm" class="cursos"> Administração <br>
+                <input type="radio" name="ads" id="idads" class="cursos"> Análise e desenvolvimento de sistemas <br>
+                <input type="radio" name="enf" id="idenf" class="cursos"> Enfermagem <br>
+                <input type="radio" name="fisio" id="idfisio" class="cursos"> Fisioterapia <br>
+                <input type="radio" name="edfis" id="idedfis" class="cursos"> Educação Física <br>
+            </div>
+
+            <!-- Caixas de seleção ou radio buttons para Cursos de Interesse -->
+            <select id="semestre-ingresso" name="semestre-ingresso">
+                <option value="" id="idselecione">---Selecione o Período---</option>
+                <option value="2024.1">2024.1</option>
+                <option value="2024.2">2024.2</option>
+                <!-- Outras opções -->
+            </select>
+        </section>
+        
+        <!-- Seção de experiência profissional -->
+        <section>
+            <h2>Experiência Profissional</h2>
+            <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+            <input type="text" id="cargo" name="cargo" placeholder="Cargo">
+            <input type="date" id="data-inicio" name="data-inicio" placeholder="Data de Início">
+            <input type="date" id="data-termino" name="data-termino" placeholder="Data de Término">
+        </section>
+        
+        <!-- Seção de comentários ou observações -->
+        <section>
+            <h2>Comentários ou Observações</h2>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Insira seus comentários aqui"></textarea>
+        </section>
+        
+        <!-- Botões de envio e reset -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <script src="./cep.js"></script>
+    <script src="./cpf.js"></script>
+</body>
+</html>
